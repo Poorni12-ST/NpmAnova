@@ -1,0 +1,18 @@
+Package: NonParaTwoWayANOVA
+Title: Non-parametric Two-Way ANOVA
+Version: 0.0.1
+Authors@R: 
+    person("Group 02", "LastName", email = "jpasindumadusanka@gmail.com", role = c("aut", "cre"))
+Description: Implements a non-parametric alternative to traditional two-way ANOVA using a boosting approach with binary decision stumps. The package constructs an additive model where each predictor (main effect or interaction) contributes through a simple tree with two branches. It features the orthogonalization of effects through the purification method proposed by Lengerich (2020), ensuring proper separation between main effects and interactions. Significance testing is performed using a permutation-based approach inspired by Freedman and Lane (1983), adapted for the boosting framework. This method is particularly useful for analyzing factorial designs with categorical predictors when parametric assumptions cannot be met or when more flexible modeling of effects is desired.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+        license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: knitr, rmarkdown, caret, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2025-03-15 10:30:33 UTC; pasindumadusanka
+Author: Group 02 LastName [aut, cre]
+Maintainer: Group 02 LastName <jpasindumadusanka@gmail.com>
